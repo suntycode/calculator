@@ -1,0 +1,132 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    
+    
+}
+
+.heading{
+    
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    color: #252B48;
+    text-transform: capitalize;
+}
+.container{
+    background-color: #B9B4C7;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 1px solid #252B48;
+}
+
+.input-field{
+   width: 90%;
+   border: none;
+   border-radius:0.5rem;
+   height: 40px;
+   font-weight: bold;
+   font-size: x-large;
+  padding-left: 10px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    
+ 
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.btn{
+    color: #252B48;
+    cursor: pointer;
+    font-weight: 900;
+font-size: larger;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1{
+   color: #FF4C29;
+}
+
+@media screen and (max-width:950px) {
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       row-gap: 2rem;
+       justify-content: space-around;
+    }
+
+    .container{
+        width: 40%;
+    }
+
+    .heading{
+        font-size: xx-large;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       row-gap: 2rem;
+       justify-content: space-around;
+    }
+
+    .container{
+      width: fit-content;
+    }
+
+    .heading{
+        font-size: large;
+        text-align: center;
+    }
+}
